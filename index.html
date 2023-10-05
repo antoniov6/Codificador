@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificador/Decodificador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Codificador/Decodificador</h1>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" /><br /><br />
+
+    <button onclick="verificarSenha()">Verificar Senha</button><br /><br />
+    <div id="conteudo" style="display: none">
+      <label for="fraseCodificada">Frase Codificada:</label>
+      <input type="text" name="" id="fraseCodificada" />
+      <button onclick="decodificar()">Decodificar</button>
+
+      <label for="fraseNormal">Frase Normal:</label>
+      <input type="text" id="fraseNormal" /><br /><br />
+      <button onclick="codificar()">Codificar</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
